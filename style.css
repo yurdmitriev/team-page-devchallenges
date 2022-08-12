@@ -46,6 +46,7 @@ header>.container {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
+    column-gap: 2rem;
 }
 
 header h1 {
@@ -133,6 +134,10 @@ footer a {
 
     main {
         margin-top: 0;
+    }
+
+    main .wrapper {
+        justify-content: space-evenly;
     }
 
     main .item:nth-child(even) {
