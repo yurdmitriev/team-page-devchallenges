@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+}
+
+.container {
+    max-width: 925px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+picture {
+    display: flex;
+}
+
+picture img {
+    max-width: 100%;
+}
+
+header {
+    margin: 3em 0;
+}
+
+header>.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header section {
+    max-width: 440px;
+    font-size: 1.15em;
+}
+
+header h2 {
+    margin: 1em 0 .5em;
+    text-transform: uppercase;
+    font-size: inherit;
+    font-weight: 600;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    margin: 4em 0;
+}
+
+main .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .item {
+    flex: 0 1 min(250px, 45%);
+}
+
+main .item picture {
+    max-width: 238px;
+}
+
+main .item .row {
+    display: flex;
+}
+
+main .item .position {
+    writing-mode: vertical-lr;
+    margin-left: 0.5em;
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+main .item h3 {
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    color: #828282;
+    margin: auto 0 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+footer a {
+    color: inherit;
+    font-weight: 700;
+}
+
+@media (min-width: 780px) {
+    html {
+        font-size: 16px;
+    }
+
+    main .item:nth-child(3n + 2) {
+        margin-top: 5em;
+    }
+}
+
+@media (max-width: 780px) {
+    html {
+        font-size: 14px;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    main .item:nth-child(even) {
+        margin-top: 3em;
+    }
+}
